@@ -1,0 +1,229 @@
+main{
+	display:block;
+}
+
+@charset "utf-8";
+@font-face{   
+    font-family: "Lobster";
+    src: url("../fonts/lobster_1.3-webfont.eot");
+    src: url("../fonts/lobster_1.3-webfont.eot?#amolobster") format("embedded-opentype"),
+         url("../fonts/lobster_1.3-webfont.woff") format("woff"),
+         url("../fonts/lobster_1.3-webfont.ttf") format("truetype"),
+         url("../fonts/lobster_1.3-webfont.eot.svg#lobster_1.3regular") format("svg");
+
+}
+
+
+@font-face{   
+    font-family: "OpenSansLight";
+    src: url("../fonts/opensans-light-webfont.eot");
+    src: url("../fonts/opensans-light-webfont.eot?#amolobster") format("embedded-opentype"),
+         url("../fonts/opensans-light-webfont.woff") format("woff"),
+         url("../fonts/opensans-light-webfont.ttf") format("truetype"),
+         url("../fonts/opensans-light-webfont.eot.svg#open_sanslight") format("svg");
+
+}
+
+
+@font-face{   
+    font-family: "OpenSansBold";
+    src: url("../fonts/opensans-bold-webfont.eot");
+    src: url("../fonts/opensans-bold-webfont.eot?#amolobster") format("embedded-opentype"),
+         url("../fonts/opensans-bold-webfont.woff") format("woff"),
+         url("../fonts/opensans-bold-webfont") format("truetype"),
+         url("../fonts/opensans-bold-webfont.eot.svg#open_sansbold") format("svg");
+}
+
+
+
+.fuenteTitulo { font-family: Lobster;}
+.fuenteNormal {font-size: 2em; font-family: OpenSansLight;}
+.fuenteNormalMenu{font-size: 1.5em; font-family: OpenSansLight;}
+.fuenteMenuAux{font-size: 1.7em; font-family: OpenSansLight;}
+.fuenteSubMenu{font-size: 1.0em; font-family: OpenSansLight;}
+.fuenteSubSubMenu{font-size: 0.7em; font-family: OpenSansLight;}
+
+.fuenteTextoHome{font-family: OpenSansLight; font-size: 2.5em; text-align:right; }
+.fuenteTextoHome a{text-decoration:none; color:#1A1A1A; ;}
+.fuenteMarca { font-family: Lobster; text-align:center; line-height:1;}
+.fuenteMarca h1{ 
+	-webkit-transform:  scale(0.6);
+    -moz-transform:  scale(0.6);
+	-ms-transform: scale(0.6);
+	-o-transform:  scale(0.6);
+	transform:  scale(0.6);
+	margin-top:4%;
+}
+
+.fuenteMarca h2{ 
+	-webkit-transform:  scale(1.6);
+    -moz-transform:  scale(1.6);
+	-ms-transform:  scale(1.6);
+	-o-transform:  scale(1.6);
+	transform:  scale(1.6);
+}
+
+
+.fondoNegroBordes{
+		background:#1a1a1a;
+		border-top-width:1px;
+     	border-top-style:solid;
+		-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.45);
+		box-shadow: 0 6px 12px rgba(0,0,0,0.45);
+
+}
+
+
+
+.topSeparator{
+	margin-top:40em;
+}
+
+.normalSeparator{
+	margin-top:10%;
+}
+
+.doubleSeparator{
+	margin-top:17%;
+}
+
+
+.bordeSuperior{
+ border-top: #1A1A1A 0.3em solid;
+}
+
+.anchoMaximo{ width: 100%;}
+.listaHorizontal{display:inline;}
+.fijador{position:fixed;}
+
+
+.logo{
+	text-align:center; 
+	background-image:url(../images/Imagineria/montanes.jpg); 
+	background-size: 100%; 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Imagineria/montanes.jpg',sizingMethod='scale');
+	-ms-filter: " progid:dximagetransform.microsoft.alphaimageloader(src="../images/Imagineria/montanes.jpg" ,sizingmethod="scale" )";
+}
+	
+
+
+.menuIdiomas{
+}
+
+.menuIdiomas lisadfwef{
+	/*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    
+	overflow:hidden;
+    padding:10px;
+
+}	
+
+
+.titulo{
+	color:#000;
+	font-size:  6em;
+	margin-top: 10px;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 5px;
+	padding-left: 5px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+
+    -webkit-margin-after: 0em;
+	-webkit-margin-before: 0em;
+	-moz-margin-after: 0em;
+	-moz-margin-before: 0em;
+	-o-margin-after: 0em;
+	-o-margin-before: 0em;	
+}
+
+
+
+
+#page{
+	font: 70%/1.4 Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*******************************************************************************************************
+********************************************************************************************************
+							CONTENIDO
+							
+********************************************************************************************************
+********************************************************************************************************/
+.lineaSuperior{
+	position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: -5rem;
+    height: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.45);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.45);
+}
+
+
+.contenido{
+	width: 95%;	
+	margin:0 auto;
+}
+
+.twoRows{
+	margin: 0 auto;
+	display:flex;
+	width:100%;
+}
+
+
+.oneRow{
+	margin: 0 auto;
+	display:block;
+	width:60%;
+		
+}
+
+.oneRow{
+	width:100%;
+		
+}
+
+.rowContainer{
+		    margin: 0 auto;
+			text-align:center;
+			width:90%;
+		
+}
+
+.modulo{
+	height:100%;
+}
+
+#row1{
+	width: 50%;
+}
+
+#row2{
+	width: 100%;
+}
+
+#fotoLat{
+	min-height: 34em;
+	background-image:url('../images/home/lateral-intro.jpg');
+	background-size: contain; 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home/lateral-intro.jpg',sizingMethod='scale');
+	-ms-filter: " progid:dximagetransform.microsoft.alphaimageloader(src="../images/home/lateral-intro.jpg" ,sizingmethod="scale" )";
+	background-repeat:no-repeat;
+	opacity:.4;
+}
+
+

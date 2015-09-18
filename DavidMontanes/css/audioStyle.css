@@ -1,0 +1,13 @@
+.canciones{
+	
+	text-align: left;
+}
+
+.canciones a{
+	font-family: 'Lobster';
+	font-size: 2em;
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	line-height:2;
+}

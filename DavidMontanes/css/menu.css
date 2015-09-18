@@ -1,0 +1,394 @@
+/* CSS Document */
+
+/*
+*
+*   MENUS DE IDIOMAS
+*
+*
+*/
+
+#menuAux{
+	
+	position: fixed;
+    z-index: 101;
+    left: 0%;
+    top: 1em;
+    right: 85%;
+   
+}
+
+#menuContentAux{
+	width:80%;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+#menuContentAuxUL{
+   	position:relative;
+	overflow:hidden;
+}
+
+
+
+
+
+.baseMenu >div ul{
+	width:100%;
+/*	position:relative;*/
+	text-align: justify;
+	
+}
+
+.baseMenu >div ul li{
+	display:table-cell; 
+	width:0.1%;
+    padding-left: 0.1em;
+}
+
+
+.baseMenu > div ul li a{
+	color:#000;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	position:relative;
+	text-align:center;
+	padding-top: 15px;
+}
+
+.baseMenu > div ul.scroll li a{
+	color:#FFF;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	position:relative;
+	text-align:center;
+	padding-top: 15px;
+}
+
+/*
+*
+*
+*              MENU PRINCIPAL
+*
+*
+*
+*/
+#MenuPrincipal{
+    text-transform: uppercase;
+	position: fixed;
+    padding-top: 15px;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    padding: 0 130px;
+    text-align: center;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    height: 20em;
+	
+	
+}
+
+#menuContainer{
+    width:  66%;
+    margin: 0 auto;
+    left:0;
+    right: 0;
+  	position:relative;
+	height:100%;
+	overflow:hidden;
+	
+}
+
+#MenuPrincipalUL{
+	visibility:visible;
+	color:#000;
+
+}
+
+#MenuPrincipalUL.scroll{
+	visibility:visible;
+	color:#FFF;
+}
+
+#MenuOcultoUL{
+	visibility:hidden;
+}
+
+.mainMenu{
+	height:2.7em;
+	overflow:hidden;
+	position:relative;
+}
+
+.mainMenu div{
+	
+    position: absolute; /*Convertimos el contenedor en posición absoluta*/
+    margin:20px auto;
+
+	
+}
+
+                /* Level By Level */
+.mainMenu > div ul{
+	display: table;
+	width:100%;
+	position:relative;
+	
+}
+
+.mainMenu > div ul li{
+	display:table-cell; 
+}
+
+/** SUBMENU **/
+.mainMenu > div ul > li:hover > ul{
+	display:block;
+	margin-top:0.5em;
+	
+}
+
+
+.mainMenu > div ul > li > ul{
+	background:#fff;
+	position:absolute;
+	line-height:2;
+	height:auto;
+	
+	opacity: .7;
+	
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
+	
+	-webkit-box-shadow:0 6px 0px rgba(0,0,0,0.45);
+	box-shadow:0 6px 0px rgba(0,0,0,0.45);
+	
+	left:0;
+	right:0;
+}
+
+.mainMenu > div ul.scroll > li > ul{
+	background:#1A1A1A;
+	opacity: .9;
+}
+
+.mainMenu > div ul.scroll > li > ul > li >ul{
+	background:#1A1A1A;
+	opacity: 1;
+}
+
+.mainMenu > div ul > li > ul > li >ul{
+	opacity: 1;
+}
+
+.mainMenu > div ul > li > ul > li{
+    
+	height:auto;
+	
+	width:0.1%;
+	
+	-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.45);
+	box-shadow: 0 6px 0px rgba(0,0,0,0.45);
+	
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
+	
+
+}
+.mainMenu > div ul > li > ul > li:hover{
+   
+	width:0.1%;
+	
+	-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.45);
+	box-shadow: 0 6px 0px rgba(0,0,0,0.45);
+	
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
+	
+
+}
+/**ThiRD **/
+.mainMenu > div ul > li > ul > li:hover > ul{
+   display:block;
+   margin-top:0;
+	
+
+}
+/**/
+
+/** END-SUBMENU  */
+
+.mainMenu > div ul > li > ul{
+	display:none;
+}
+
+
+.mainMenu > div ul li a{
+	color:#000;
+	display:block; 
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	position:relative;
+	text-align:center;
+	padding-top: 15px;
+}
+
+.mainMenu > div ul li ul li a{
+	padding-top: 0px;
+}
+
+.mainMenu > div ul li:hover ul li a{
+	padding-top: 0px;
+}
+
+.mainMenu > div ul.scroll li a{
+	color:#FFF; 
+	display:block; 
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	position:relative;
+	text-align:center;
+	padding-top: 15px;
+}
+
+
+.mainMenu > div ul > li > ul > li a:hover{
+	
+		
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
+
+}
+
+.mainMenu > div ul > li > a span{
+	background: #174459;
+	display:block;
+	height:82%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top: -70%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.mainMenu > div ul > li > a span .icon{
+	display:block;
+}
+
+.mainMenu > div ul > li > a:hover > span{
+	top:0;
+	padding-top: 15px;
+}
+
+
+/* MENU SPAN COLORS  */
+
+.mainMenu div ul li a .color1{
+	background:#0e5061;
+}
+
+.mainMenu div ul li a .color2{
+	background:#5da5a2;
+}
+.Menu2Color:hover{
+	background:#5da5a2;
+}
+
+.mainMenu div ul li a .color3{
+	background:#f25724;
+}
+.Menu3Color:hover{
+	background:#f25724;
+}
+
+.mainMenu div ul li a .color4{
+	background:#CCCC00;
+}
+.Menu4Color:hover{
+	background:#CCCC00;
+}
+
+.mainMenu div ul li a .color5{
+	background:#37a4d9;
+}
+.Menu5Color:hover{
+	background:#37a4d9;
+}
+
+
+.mainMenu div ul li a .color6{
+	background:#6f5061;
+}
+/****END COLOR SPAN*/
+
+
+
+
+
+
+
+
+/*
+*
+*
+*              MENU SOCIAL
+*
+*
+*
+*/
+#menuAux2{
+	
+	position: fixed;
+    z-index: 101;
+    left: 85%;
+    top: 1.2em;
+    right: 0%;
+   
+}
+
+#menuContentAux2{
+	width:80%;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+#menuContentAuxUL2{
+   	position:relative;
+	overflow:hidden;
+}
+
+
+
+
+/*******************************************/
